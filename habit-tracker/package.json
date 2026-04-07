@@ -1,0 +1,14 @@
+{
+    "name": "habit-tracker",
+    "version": "1.0.0",
+    "description": "Aplicação para resolver a inconsistência em rotinas diárias",
+    "main": "src/script.js",
+    "scripts": {
+        "test": "jest",
+        "lint": "eslint src/**.js"
+    },
+    "devDependencies": {
+        "jest": "^29.0.0",
+        "eslint": "^8.0.0"
+    }
+}
