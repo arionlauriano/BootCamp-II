@@ -4,3 +4,4 @@ A dificuldade de pessoas neurodivergentes ou estudantes em manter rotinas sem fe
 Esse é um rastreador minimalisca com cálculo de progresso em tempo real.
 
 Tecnologias utilizadas: HTML, CSS, JS, Jest e ESLint.
+Link da entrega intermediária: https://entrega-intermediaria.netlify.app/
