@@ -45,3 +45,23 @@ function render() {
 if (typeof module !== 'undefined') {
     module.exports = habitLogic;
 }
+
+// Função para buscar dados da API Pública
+async function getDailyAdvice() {
+    try {
+        const response = await fetch('https://api.adviceslip.com/advice');
+        const data = await response.json();
+        displayAdvice(data.slip.advice);
+    } catch (error) {
+        console.error("Erro ao buscar API:", error);
+        displayAdvice("Continue focado nos seus hábitos!");
+    }
+}
+
+function displayAdvice(text) {
+    const adviceElement = document.getElementById('adviceDisplay');
+    if(adviceElement) adviceElement.innerText = `"${text}"`;
+}
+
+// Chama a API ao carregar a página
+window.onload = getDailyAdvice;
